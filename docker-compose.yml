@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  api:
+    build:
+      context: .
+    container_name: mini-tools
+    env_file: .env
+    restart: always
+    ports:
+      - 4005:4005
